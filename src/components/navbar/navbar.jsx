@@ -1,9 +1,9 @@
 import { FiMenu } from "react-icons/fi"
 import "./styles.css"
-import { TbCarTurbine } from "react-icons/tb"
 import { IoCartOutline } from "react-icons/io5"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { PiShoppingCart } from "react-icons/pi"
 const Navbar = () => {
     const [show ,setShow] = useState(false)
   return (
@@ -14,7 +14,7 @@ const Navbar = () => {
                     <h2>No.1 Thrift</h2>
                     
                     <div className="mobile menu-icon" onClick={()=>{setShow(!show)}}>
-                        <FiMenu/>
+                        <FiMenu size={20}/>
                     </div>
                     
                     <ul className=" navs gap desktop">
@@ -24,7 +24,7 @@ const Navbar = () => {
                         <li><button className="btn bg-white">Contacts</button></li>
                     </ul>
                     <ul className=" navs gap desktop">
-                        <li><button className="btn bg-white cart"><IoCartOutline fill="blue" size={17}/></button></li>
+                        <li><button className="btn bg-white cart"><PiShoppingCart size={20} fill="#003CD6"/></button></li>
                         <li><button className="btn bg-black">Order now</button></li>
                     </ul>
                     <ul className={show ? "show":"hidden"} id="sidenav">

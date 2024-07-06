@@ -8,8 +8,8 @@ const Navbar = () => {
     const [show ,setShow] = useState(false)
   return (
     <div>
-        <header>
-            <div className="container center padding">
+        <header className="padding">
+            <div className="container center">
                 <div className="flex flex-center flex-btw">
                     <h2 className="no-wrap">No.1 Thrift</h2>
                     

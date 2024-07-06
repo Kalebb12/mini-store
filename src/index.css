@@ -37,7 +37,7 @@
 }
 
 .container{
-  max-width: 1500px;
+  max-width: 1700px;
   min-width: 570px;
 }
 .center{
@@ -46,7 +46,9 @@
 .padding{
   padding:20px 1rem;
 }
-
+.flex-ard{
+  justify-content: space-around;
+}
 
 
 .btn{
@@ -54,6 +56,14 @@
   padding: 10px 25px;
   box-shadow: var(--shadow);
   border:none;
+  text-align: center;
+  text-wrap: nowrap;
+}
+.btn-border{
+  border-radius: 32px;
+  padding: 10px 25px;
+  border:1px solid var(--grey);
+  text-align: center;
   text-wrap: nowrap;
 }
 .bg-white{
@@ -83,6 +93,7 @@ a{
   font-weight: 700;
 }
 
+/* using flex to create responsive 3 layout max  */
 
 /* mobile  */
 @media (max-width:540px) {

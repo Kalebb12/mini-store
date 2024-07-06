@@ -1,5 +1,5 @@
 .banner{
-    background: url("/Rectangle 13.png");
+    background:linear-gradient(to right ,rgb(0,0,0,0.6),rgb(0,0,0,0.2)) , url("/Rectangle 13.png");
     background-attachment: local;
     background-size: cover;
     background-position: center;

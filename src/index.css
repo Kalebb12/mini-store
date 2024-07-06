@@ -15,7 +15,9 @@
   color: var(--grey);
   list-style-type: none;
 }
-
+.no-wrap{
+  text-wrap: nowrap;
+}
 .flex{
   display: flex;
 }
@@ -36,7 +38,7 @@
 
 .container{
   max-width: 1500px;
-  min-width: 900px;
+  min-width: 570px;
 }
 .center{
   margin: auto;
@@ -83,10 +85,10 @@ a{
 
 
 /* mobile  */
-@media (max-width:500px) {
+@media (max-width:540px) {
 
   .container{
     max-width:500px ;
-    min-width: 500px;
+    min-width: 310px;
   }
 }

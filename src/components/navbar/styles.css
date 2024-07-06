@@ -21,7 +21,7 @@ ul.navs{
 .mobile{
     display: none;
 }
-@media (max-width:500px) {
+@media (max-width:860px) {
     #sidenav{
         position: fixed;
         top: 80px;

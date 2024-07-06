@@ -37,7 +37,7 @@ line-height: 20px;
 letter-spacing: -0.05em;
 }
     
-@media (max-width:500px) {
+@media (max-width:540px) {
     .banner{
         height: 430px;
     }

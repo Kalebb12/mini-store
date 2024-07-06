@@ -11,7 +11,7 @@ const Navbar = () => {
         <header>
             <div className="container center padding">
                 <div className="flex flex-center flex-btw">
-                    <h2>No.1 Thrift</h2>
+                    <h2 className="no-wrap">No.1 Thrift</h2>
                     
                     <div className="mobile menu-icon" onClick={()=>{setShow(!show)}}>
                         <FiMenu size={20}/>

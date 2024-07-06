@@ -13,13 +13,13 @@ export const Collection = () => {
         </div>
         <div className="item">
             <img src={img2} alt="" />
-            <h3>Crocs</h3>
+            <h3>Abayas</h3>
             <button className="btn-border lg-btn">Explore collection</button>
             <button className="btn-border sm-btn">Explore</button>
         </div>
         <div className="item">
             <img src={cloth} alt="" />
-            <h3>Crocs</h3>
+            <h3>And lots more...</h3>
             <button className="btn-border lg-btn">Explore collection</button>
             <button className="btn-border sm-btn">Explore</button>
         </div>

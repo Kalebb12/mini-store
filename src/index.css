@@ -3,6 +3,7 @@
   --white:#FFFFFF;
   --grey:#333333;
   --shadow:0px 2px 13.2px 0px #00000026;
+  --body:#faf8f8;
 }
 
 *{
@@ -15,6 +16,9 @@
   color: var(--grey);
   list-style-type: none;
 }
+body{
+  background-color: var(--body);
+}
 .no-wrap{
   text-wrap: nowrap;
 }
@@ -23,6 +27,11 @@
 }
 .flex-center{
   align-items: center;
+}
+
+.flex-cen-full{
+  align-items: center;
+  justify-content: center;
 }
 .flex-btw{
   justify-content: space-between;
@@ -93,8 +102,17 @@ a{
   font-weight: 700;
 }
 
-/* using flex to create responsive 3 layout max  */
+.flex-col-3{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-col-3>*{
+  flex-basis:calc(100% -10px);
+}
 
+.mt-5{
+  margin-top: 24px;
+}
 /* mobile  */
 @media (max-width:540px) {
 

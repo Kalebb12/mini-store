@@ -1,0 +1,45 @@
+import { FiMenu } from "react-icons/fi"
+import "./styles.css"
+import { TbCarTurbine } from "react-icons/tb"
+import { IoCartOutline } from "react-icons/io5"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+const Navbar = () => {
+    const [show ,setShow] = useState(false)
+  return (
+    <div>
+        <header>
+            <div className="container center padding">
+                <div className="flex flex-center flex-btw">
+                    <h2>No.1 Thrift</h2>
+                    
+                    <div className="mobile menu-icon" onClick={()=>{setShow(!show)}}>
+                        <FiMenu/>
+                    </div>
+                    
+                    <ul className=" navs gap desktop">
+                        <li><button className="btn bg-white">Home</button></li>
+                        <li><button className="btn bg-white">Products</button></li>
+                        <li><button className="btn bg-white">FAQS</button></li>
+                        <li><button className="btn bg-white">Contacts</button></li>
+                    </ul>
+                    <ul className=" navs gap desktop">
+                        <li><button className="btn bg-white cart"><IoCartOutline fill="blue" size={17}/></button></li>
+                        <li><button className="btn bg-black">Order now</button></li>
+                    </ul>
+                    <ul className={show ? "show":"hidden"} id="sidenav">
+                        <li><Link to="#">Home</Link></li>
+                        <li><Link to="#">Products</Link></li>
+                        <li><Link to="#">FAQS</Link></li>
+                        <li><Link to="#">Contacts</Link></li>
+                        <li>Cart</li>
+                        <li>Order now</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+  )
+}
+
+export default Navbar

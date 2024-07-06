@@ -1,0 +1,16 @@
+
+ul.navs{
+    display: flex;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-icon{
+    margin-left: auto;
+}
+.menu-icon:hover{
+    cursor: pointer;
+}

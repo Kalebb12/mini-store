@@ -14,7 +14,7 @@ const Products = () => {
   return (
     <div>
       <div className="container-sm product-all center padding">
-        <h2 className="product-title" style={{marginLeft:10}}>Trending Products</h2>
+        <h2 className="product-title">Products</h2>
 
 
         <div className="flex flex-col-3 gap product-container">

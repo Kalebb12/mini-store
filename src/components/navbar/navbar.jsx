@@ -1,4 +1,4 @@
-import { FiMenu } from "react-icons/fi"
+import { FiMenu, FiSearch } from "react-icons/fi"
 import "./styles.css"
 import { IoCartOutline } from "react-icons/io5"
 import { useContext, useState } from "react"
@@ -12,22 +12,26 @@ const Navbar = () => {
         <header className="padding">
             <div className="container center">
                 <div className="flex flex-center flex-btw">
-                    <h2 className="no-wrap nav-title">No.1 Thrift</h2>
-                    
-                    <div className="mobile menu-icon" onClick={handleOpen}>
-                        <FiMenu size={20}/>
+                    <div className="flex flex-center" style={{gap:10}}>
+                        <div className="mobile menu-icon" onClick={handleOpen}>
+                                <FiMenu size={30}/>
+                        </div>
+                        <h2 className="no-wrap nav-title">No.1 Thrift</h2>
                     </div>
                     
-                    <ul className=" navs gap desktop">
-                        <li><button className="btn bg-white">Home</button></li>
-                        <li><button className="btn bg-white">Products</button></li>
-                        <li><button className="btn bg-white">FAQS</button></li>
-                        <li><button className="btn bg-white">Contacts</button></li>
-                    </ul>
+                    
+                    <div className="input">
+                        <input type="text" name="" placeholder="search" />
+                    </div>
+
                     <ul className=" navs gap desktop">
                         <li><button className="btn bg-white cart" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button></li>
                         <li><button className="btn bg-black">Order now</button></li>
                     </ul>
+
+                    <div className="mobile sch-icon" onClick={handleOpen}>
+                        <FiSearch size={30}/>
+                    </div>
                 </div>
             </div>
         </header>

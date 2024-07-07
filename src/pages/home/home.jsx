@@ -6,8 +6,6 @@ import Products from "../../components/products/products"
 const Home = () => {
   return (
     <div >
-      <Banner/>
-      <Collection/>
       <Products/>
       <Footer/>
     </div>

@@ -16,6 +16,10 @@
   color: var(--grey);
   list-style-type: none;
 }
+
+.modal-open{
+  overflow-y: hidden;
+}
 body{
   background-color: var(--body);
 }

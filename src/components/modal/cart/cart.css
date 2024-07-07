@@ -72,6 +72,14 @@
 
 @media (max-width:600px) {
     #sidenav{
-        width: 300px;
+        width: 320px;
+    }
+    .cart-title{
+        font-weight: 500;
+        font-size:14px ;
+    }
+    .cart-price{
+        font-weight: 500;
+        font-size:12px ;
     }
 }

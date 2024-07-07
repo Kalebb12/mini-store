@@ -2,7 +2,13 @@
 ul.navs{
     display: flex;
 }
-
+.nav-title{
+font-size: 32px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: -0.05em;
+text-align: center;
+}
 .cart{
     display: flex;
     align-items: center;

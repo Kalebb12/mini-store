@@ -22,6 +22,9 @@ body{
 .no-wrap{
   text-wrap: nowrap;
 }
+.text-center{
+  text-align: center;
+}
 .flex{
   display: flex;
 }

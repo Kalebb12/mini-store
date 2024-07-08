@@ -181,7 +181,7 @@ letter-spacing: -0.05em;
         z-index: 100;
         width: 100%;
         background: #faf8f8;
-        padding: 10px;
+        padding: 20px;
    } 
    .payment p,.payment span,.payment label{
     color: var(--black) !important;

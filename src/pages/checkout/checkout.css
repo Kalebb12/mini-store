@@ -169,7 +169,7 @@ letter-spacing: -0.05em;
       #slide-up{
         position: fixed;
         bottom:0px;
-        height: 570px;
+        height: 590px;
     }
    .payment{
         position: fixed;
@@ -226,7 +226,7 @@ letter-spacing: -0.05em;
         box-sizing: border-box;
     }
     .payment >*{
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .gone ,.gone *{
         display:none;

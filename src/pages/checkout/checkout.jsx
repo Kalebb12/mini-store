@@ -55,6 +55,11 @@ export const Checkout = () => {
                             <p className="remove">Remove</p>
                         </div>
                     </li>
+
+                    <div className="flex flex-btw padding gone">
+                        <p className="bold">Total</p>
+                        <span>12,000</span>
+                    </div>
                 </ul>
                 {
                     paymentModal &&

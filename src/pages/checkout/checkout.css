@@ -123,6 +123,14 @@
 .bottom *{
     display: none;
 }
+
+.bold{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: -0.05em;
+}
 @media (max-width:869px) {
     .checkout{
         min-width: 300px;
@@ -219,6 +227,9 @@
     }
     .payment >*{
         margin-bottom: 15px;
+    }
+    .gone ,.gone *{
+        display:none;
     }
 }
 

@@ -12,15 +12,9 @@ const Navbar = () => {
         <header className="" id="top">
             <div className="container center padding">
                 <div className="flex flex-center flex-btw ">
-                    <div className="flex flex-center" style={{gap:10}}>
-                        <div className="mobile menu-icon" onClick={handleOpen}>
-                                <FiMenu size={30}/>
-                        </div>
-                        <Link to="/mini-store/">
-                            <h2 className="no-wrap nav-title">No.1 Thrift</h2>
-                        </Link>
-                    </div>
-                    
+                    <Link to="/mini-store/">
+                        <h2 className="no-wrap nav-title">No.1 Thrift</h2>
+                    </Link>
                     
                     <div className="input">
                         <input type="text" name="" placeholder="search" />

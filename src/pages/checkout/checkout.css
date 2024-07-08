@@ -62,9 +62,6 @@
     letter-spacing: -0.05em;
 
 }
-.checkout-container{
-    /* flex-wrap: wrap; */
-}
 
 .payment > *{
     margin-bottom: 30px;
@@ -164,7 +161,7 @@
       #slide-up{
         position: fixed;
         bottom:0px;
-        height: 650px;
+        height: 570px;
     }
    .payment{
         position: fixed;
@@ -219,6 +216,9 @@
     .name{
         width: 100%;
         box-sizing: border-box;
+    }
+    .payment >*{
+        margin-bottom: 15px;
     }
 }
 

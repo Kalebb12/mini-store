@@ -5,6 +5,7 @@ import img2 from "/shirt.png"
 import img3 from "/sneakers.png"
 import "./cart.css"
 import { BiArrowBack } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const CartModal = () => {
     const {show ,handleClose} = useContext(GlobalContext)
     return (
@@ -58,6 +59,18 @@ const CartModal = () => {
                         <p className="remove">Remove</p>
                     </div>
                 </li>
+
+                <div className="flex flex-col gap flex-center center">
+                    <p>Subtotal of items in cart = N12,000</p>
+                    <div className="my-btns flex flex-center gap">
+                        <Link to="/mini-store/">
+                            <button className="btn back-btn" onClick={handleClose}>Continue shopping</button>
+                        </Link>
+                        <Link to="/mini-store/checkout/">
+                            <button className="btn checkout-btn" onClick={handleClose}>Checkout</button>
+                        </Link>
+                    </div>
+                </div>
             </ul>
         </div>
     );

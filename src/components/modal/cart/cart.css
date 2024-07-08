@@ -65,9 +65,24 @@
     gap: 10px;
 }
 
+.checkout-btn{
+    background: #333333;
+    padding: 9px 35px 10px 35px;
+    color: #9B9B9B;
+}
+
+.back-btn{
+    width: 175px;
+    border: 1px solid var(--black);
+}
+
 @media (max-width:620px) {
     #sidenav{
         width: 500px;
+    }
+    .back-btn{
+        padding: 4px 20px;
+        text-align: center;
     }
 }
 

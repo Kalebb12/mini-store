@@ -16,7 +16,9 @@ const Navbar = () => {
                         <div className="mobile menu-icon" onClick={handleOpen}>
                                 <FiMenu size={30}/>
                         </div>
-                        <h2 className="no-wrap nav-title">No.1 Thrift</h2>
+                        <Link to="/mini-store/">
+                            <h2 className="no-wrap nav-title">No.1 Thrift</h2>
+                        </Link>
                     </div>
                     
                     

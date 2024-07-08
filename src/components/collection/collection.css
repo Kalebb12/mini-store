@@ -29,13 +29,7 @@
     height: 190px;
     object-fit: contain;
 }
-.container-sm{
-    flex-shrink: 2;
-    max-width: 1300px;
-    overflow: hidden;
-    gap: 20px;
-    /* min-width: ; */
-}
+
 
 .sm-btn{
     display: none;

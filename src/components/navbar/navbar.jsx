@@ -16,22 +16,13 @@ const Navbar = () => {
                         <h2 className="no-wrap nav-title">No.1 Thrift</h2>
                     </Link>
                     
-                    <div className="input">
-                        <input type="text" name="" placeholder="search" />
-                    </div>
-
                     <ul className=" navs gap flex flex-center desktop">
                         <li><button className="btn bg-white cart desktop" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button></li>
                         <li><a href="#explore" className="btn bg-black desktop">Explore</a></li>
                     </ul>
-                    <div className="mobile flex flex-center mobile-icons padding">
-                        <Link to="/mini-store/checkout/" className="mobile">
-                            <PiShoppingCart size={30} fill="#003CD6" className="mobile"/>
-                        </Link>
-                        <div className="sch-icon mobile" onClick={handleOpen}>
-                            <FiSearch size={30} className="mobile"/>
-                        </div>
-                    </div>
+                    <Link to="/mini-store/checkout/" className="mobile">
+                        <PiShoppingCart size={30} fill="#003CD6" className="mobile"/>
+                    </Link>
                 </div>
             </div>
         </header>

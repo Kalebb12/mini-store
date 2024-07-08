@@ -69,22 +69,30 @@
     background: #333333;
     padding: 9px 35px 10px 35px;
     color: #9B9B9B;
-    width: 120px !important;
+    width: 170px !important;
 }
 
 .back-btn{
     width: 175px;
     border: 1px solid var(--black);
 }
-
+#cnt-btn{
+    border: 1px solid grey;
+    width: 170px;
+    border: 0.5px solid var(--grey);
+    color: var(--black) !important;
+    color: var(--white);
+    padding: 9px 10px;
+    border-radius: 35px;
+}
 @media (max-width:620px) {
     #sidenav{
         width: 500px;
     }
-    .back-btn{
-        padding: 4px 20px;
-        text-align: center;
-    }
+}
+
+.cnt-btn{
+    border: 1px solid var(--black) !important;
 }
 
 @media (max-width:600px) {
@@ -99,4 +107,8 @@
         font-weight: 500;
         font-size:12px ;
     }
+    .my-btns button {
+        font-size: 14px !important;
+    }
+    
 }

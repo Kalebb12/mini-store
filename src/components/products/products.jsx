@@ -13,11 +13,11 @@ import { BiSolidCart } from "react-icons/bi";
 const Products = () => {
   return (
     <div>
-      <div className="container-sm product-all center padding">
+      <div className="container-sm center padding">
         <h2 className="product-title" id="explore">Products</h2>
 
 
-        <div className="flex flex-col-3 gap product-container">
+        <div className="flex flex-col-3 product-cnt">
           <div className="product">
             <img src={img1} alt="" />
             <div className="padding">

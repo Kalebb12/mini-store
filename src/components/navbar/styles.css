@@ -50,7 +50,7 @@ margin-bottom: 5px;
     letter-spacing: -0.05em;
     color: #909090;
 }
-@media (max-width:860px) {
+@media (max-width:400px) {
     .mobile{
     display:inline-block;
     position: relative;
@@ -58,10 +58,6 @@ margin-bottom: 5px;
     .desktop,.desktop>li{
     display: none;
     position: absolute;
-    }
-    .input > input{
-        display: none;
-        position: absolute;
     }
 }
 

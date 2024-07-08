@@ -1,6 +1,6 @@
 .product{
-    height:510px;
-    width: 314px;
+    height:600px;
+    width: 400px;
     background-color: var(--white);   
     margin: auto; 
 }
@@ -47,6 +47,7 @@
 }
 
 @media (max-width:1024px) {
+  
     .product-container,.product-all{
         max-width: 671px;
         margin: auto;
@@ -63,12 +64,15 @@
         font-weight: 500;
         line-height: 12px;
         letter-spacing: -0.05em;
-        text-align: center;
+        
+    }
+    .product{
+        height:520px ;
     }
 }
 
-@media (min-width:1034px){
+@media (max-width:1030px) {
     .product-title{
-        margin-left: 15px;
+        text-align: center;
     }
 }

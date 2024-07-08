@@ -9,9 +9,9 @@ const Navbar = () => {
     const {handleOpen,handleClose} = useContext(GlobalContext)
   return (
     <div>
-        <header className="padding">
-            <div className="container center">
-                <div className="flex flex-center flex-btw">
+        <header className="" id="top">
+            <div className="container center padding">
+                <div className="flex flex-center flex-btw ">
                     <div className="flex flex-center" style={{gap:10}}>
                         <div className="mobile menu-icon" onClick={handleOpen}>
                                 <FiMenu size={30}/>
@@ -26,13 +26,17 @@ const Navbar = () => {
                         <input type="text" name="" placeholder="search" />
                     </div>
 
-                    <ul className=" navs gap desktop">
-                        <li><button className="btn bg-white cart" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button></li>
-                        <li><button className="btn bg-black">Order now</button></li>
+                    <ul className=" navs gap flex flex-center desktop">
+                        <li><button className="btn bg-white cart desktop" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button></li>
+                        <li><a href="#explore" className="btn bg-black desktop">Explore</a></li>
                     </ul>
-
-                    <div className="mobile sch-icon" onClick={handleOpen}>
-                        <FiSearch size={30}/>
+                    <div className="mobile flex flex-center mobile-icons padding">
+                        <Link to="/mini-store/checkout/" className="mobile">
+                            <PiShoppingCart size={30} fill="#003CD6" className="mobile"/>
+                        </Link>
+                        <div className="sch-icon mobile" onClick={handleOpen}>
+                            <FiSearch size={30} className="mobile"/>
+                        </div>
                     </div>
                 </div>
             </div>

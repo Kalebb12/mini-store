@@ -69,6 +69,7 @@
     background: #333333;
     padding: 9px 35px 10px 35px;
     color: #9B9B9B;
+    width: 120px !important;
 }
 
 .back-btn{

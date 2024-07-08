@@ -14,7 +14,7 @@ const Products = () => {
   return (
     <div>
       <div className="container-sm product-all center padding">
-        <h2 className="product-title">Products</h2>
+        <h2 className="product-title" id="explore">Products</h2>
 
 
         <div className="flex flex-col-3 gap product-container">
@@ -186,7 +186,7 @@ const Products = () => {
             <img src={img8} alt="" />
             <div className="padding">
               <div className="flex flex-btw flex-center">
-                <h3>Floral design low  cover <br /> shoe</h3>
+                <h3>Floral design low  cover shoe</h3>
                 <div className="icon-container">
                     <BiSolidCart/>
                 </div>

@@ -22,6 +22,12 @@ margin-bottom: 5px;
 }
 .mobile{
     display: none;
+    position: absolute;
+}
+
+.left{
+    margin-left: auto;
+
 }
 .input > input{
     width: 629px;
@@ -34,6 +40,9 @@ margin-bottom: 5px;
     padding: 5px 20px;
     color: var(--black);
 }
+.mobile-icons{
+    gap: 15px;
+}
 .input > input::placeholder{
     font-size: 20px;
     font-weight: 300;
@@ -44,12 +53,15 @@ margin-bottom: 5px;
 @media (max-width:860px) {
     .mobile{
     display:inline-block;
+    position: relative;
     }
     .desktop,.desktop>li{
     display: none;
+    position: absolute;
     }
     .input > input{
         display: none;
+        position: absolute;
     }
 }
 

@@ -63,7 +63,7 @@
 
 }
 .checkout-container{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .payment > *{
@@ -123,3 +123,104 @@
 .text-field{
     width: 200px;
 }
+.bottom *{
+    display: none;
+}
+@media (max-width:869px) {
+    .checkout{
+        min-width: 300px;
+    }
+    
+    .cart-title{
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        letter-spacing: -0.05em;
+    }
+    
+    .cart-price{
+        font-size:12px !important;
+    }
+    
+    .remove{
+        font-size: 9px !important;
+    }
+    .checkout li{
+        height:50px;
+    }
+    .bottom *{
+        display: inline-block;
+    }
+    .bottom{
+       position: absolute;
+       bottom: 20px;
+       margin:0 auto;
+       text-align: center;
+       align-items: center;
+       width: 90%;
+       box-sizing: border-box;
+    }
+
+
+      #slide-up{
+        position: fixed;
+        bottom:0px;
+        height: 670px;
+    }
+   .payment{
+        position: fixed;
+        bottom: -1000px;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        transition: 0.7s;
+        z-index: 100;
+        width: 100%;
+        background: #faf8f8;
+        padding: 10px;
+   } 
+   .payment p,.payment span,.payment label{
+    color: var(--black) !important;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    }
+    .payment input[type="text"]{
+        font-size: larger;
+        border:0.5px solid #d9d9d9;
+        background-color: transparent;
+        height: 40px;
+        padding: 0 10px ;
+        color: var(--black);
+    }
+    .cvv{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .exp-date{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .payment input::placeholder{
+        color: #9B9B9B;
+        font-weight: 300;
+    }
+    .payment h2{
+        color:#333333 !important;
+    }
+    .payment button{
+        background-color: #333333;
+        color: white;
+    }
+    .width-control{
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .name{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+

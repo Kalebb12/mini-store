@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import img from "/brown-shirt.png"
 import img2 from "/shirt.png"
 import img3 from "/sneakers.png"
@@ -8,14 +8,11 @@ import "./checkout.css"
 import { GlobalContext } from "../../context/context";
 import SuccessModal from "../../components/modal/success/success";
 export const Checkout = () => {
-    const {handlePayment} = useContext(GlobalContext)
+    const {handlePayment,paymentModal,setPaymentModal} = useContext(GlobalContext)
   return (
     <div>
         <div className="container padding">
-
-            
-
-            <div className="checkout-container flex flex-btw gap">
+            <div className="checkout-container flex flex-btw gap ">
                 <ul className="checkout">
                     <div className="flex flex-center checkout-arrow">
                         <Link to="/mini-store/">
@@ -59,8 +56,11 @@ export const Checkout = () => {
                         </div>
                     </li>
                 </ul>
-
-                <div className="payment">
+                {
+                    paymentModal &&
+                <div className="overlay" onClick={()=>{setPaymentModal(false)}}></div>
+                }
+                <div className="payment" id={paymentModal ? "slide-up":"hidden"}>
                     <h2>Payment Info</h2>
 
 
@@ -80,15 +80,15 @@ export const Checkout = () => {
 
                     <div>
                         <p>Name On Card</p>
-                        <input type="text" placeholder="Enter Name...." className="text-field"/>
+                        <input type="text" placeholder="Enter Name...." className="text-field name"/>
                     </div>
 
                     <div>
                         <p>Card Number</p>
-                        <input type="text" placeholder=".... .... .... 1234" maxLength={16} className="text-field"/>
+                        <input type="text" placeholder="....         ....            ....         1234" maxLength={16} className="text-field"/>
                     </div>
 
-                    <div className="flex flex-center gap width-control">
+                    <div className="flex gap flex-btw width-control">
                         <div>
                             <p>Expiration Date</p>
                             <input type="text" className="exp-date" maxLength={8} placeholder="DD MM YYYY"/>
@@ -107,8 +107,19 @@ export const Checkout = () => {
                         </div>
                         <button onClick={handlePayment}>pay</button>
                     </div>
-
+                    
                 </div>
+            </div>
+                <div className="flex flex-col gap flex-center center bottom">
+                    <p>Subtotal of items in cart = N12,000</p>
+                    <div className="my-btns flex flex-center gap">
+                        <Link to="/mini-store/">
+                            <button className="btn back-btn">Continue shopping</button>
+                        </Link>
+                        <Link to="/mini-store/checkout/">
+                            <button className="btn checkout-btn" onClick={()=>{setPaymentModal(true)}}>Checkout</button>
+                        </Link>
+                    </div>
             </div>
         </div>
         <SuccessModal/>

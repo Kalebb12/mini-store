@@ -7,8 +7,8 @@ const SuccessModal = () => {
     const {payment ,endPayment} = useContext(GlobalContext)
     return (
         <div>
-            {payment  &&
-            <div className="">
+            {payment  && 
+            <div>
                 <Link to="/mini-store/">
                 <div className="overlay" onClick={endPayment}></div>
                 </Link>

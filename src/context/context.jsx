@@ -4,7 +4,7 @@ export const GlobalContext = createContext(null);
 const GlobalState = ({children}) => {
     const [show ,setShow] = useState(false)
     const [payment, setPayment] = useState(false)
-
+    const  [paymentModal ,setPaymentModal] = useState(false)
     const handleOpen = ()=>{
         setShow(true)
         document.body.classList.add("modal-open")
@@ -24,6 +24,7 @@ const GlobalState = ({children}) => {
     const endPayment = () =>{
         document.body.classList.remove("modal-open")
         setPayment(false)
+        setPaymentModal(false)
     }
 
     return (
@@ -35,6 +36,8 @@ const GlobalState = ({children}) => {
             handlePayment,
             payment,
             endPayment,
+            paymentModal,
+            setPaymentModal
             
         }}>
             {children}

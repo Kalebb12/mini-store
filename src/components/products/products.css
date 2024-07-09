@@ -65,7 +65,7 @@
 @media (max-width:425px) {
     .product{
         width: 150px;
-        height: auto;
+        height: 440px !important;
     }
 }
 

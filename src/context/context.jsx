@@ -27,6 +27,11 @@ const GlobalState = ({children}) => {
         setPaymentModal(false)
     }
 
+    const [order, setOrder] = useState(0)
+    const handleOrder = ()=>{
+        setOrder(order+1)
+        alert("order placed")
+    }
     return (
         <GlobalContext.Provider value={{
             show,
@@ -37,7 +42,9 @@ const GlobalState = ({children}) => {
             payment,
             endPayment,
             paymentModal,
-            setPaymentModal
+            setPaymentModal,
+            order,
+            handleOrder
             
         }}>
             {children}

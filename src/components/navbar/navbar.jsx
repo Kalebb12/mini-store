@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import { PiShoppingCart } from "react-icons/pi"
 import { GlobalContext } from "../../context/context"
 const Navbar = () => {
-    const {handleOpen,handleClose} = useContext(GlobalContext)
+    const {handleOpen,handleClose ,order} = useContext(GlobalContext)
   return (
     <div>
         <header className="" id="top">
@@ -17,11 +17,12 @@ const Navbar = () => {
                     </Link>
                     
                     <ul className=" navs gap flex flex-center desktop">
-                        <li><button className="btn bg-white cart desktop" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button></li>
+                        <li><button className="btn bg-white cart relative desktop" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/> <div className="order">{order}</div></button></li>
                         <li><a href="#explore" className="btn bg-black dark-btn desktop">Explore</a></li>
                     </ul>
                     <Link to="/mini-store/checkout/" className="mobile">
-                        <PiShoppingCart size={30} fill="#003CD6" className="mobile"/>
+                        <PiShoppingCart size={30} fill="#003CD6" className="mobile relative"/>
+                        <div className="order">{order}</div>
                     </Link>
                 </div>
             </div>

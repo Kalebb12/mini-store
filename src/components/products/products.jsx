@@ -8,9 +8,14 @@ import img6 from "/shirt.png";
 import img7 from "/crocs.png";
 import img8 from "/flatshoe.png";
 import img9 from "/rubber-boots.png";
+import hat from "/buckect-hat.png"
+import cap from '/face-cap.png'
+import belt from '/belt.png'
 import { IoStarSharp } from "react-icons/io5";
-import { BiSolidCart } from "react-icons/bi";
+import { useContext } from "react";
+import { GlobalContext } from "../../context/context";
 const Products = () => {
+  const {handleOrder} = useContext(GlobalContext)
   return (
     <div>
       <div className="container-sm center padding">
@@ -33,7 +38,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N2500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -201,11 +206,14 @@ const Products = () => {
             </div>
           </div>
 
+
+
+
           <div className="product">
-            <img src={img9} alt="" />
+            <img src={belt} alt="" />
             <div className="padding">
               <div className="flex flex-btw flex-center">
-                <h3>Burgundy boots</h3>
+                <h3>Pleated belt </h3>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -215,7 +223,7 @@ const Products = () => {
                 <IoStarSharp fill="#9B9B9B" size={10} />
               </div>
               <div className="flex flex-center flex-btw">
-                <h5>N9000</h5>
+                <h5>N2500</h5>
                 <button className="bg-black">Order</button>
               </div>
             </div>
@@ -224,10 +232,10 @@ const Products = () => {
 
 
           <div className="product">
-            <img src={img9} alt="" />
+            <img src={cap} alt="" />
             <div className="padding">
               <div className="flex flex-btw flex-center">
-                <h3>Burgundy boots</h3>
+                <h3>Stylish cultural face cap</h3>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -237,7 +245,7 @@ const Products = () => {
                 <IoStarSharp fill="#9B9B9B" size={10} />
               </div>
               <div className="flex flex-center flex-btw">
-                <h5>N9000</h5>
+                <h5>N1500</h5>
                 <button className="bg-black">Order</button>
               </div>
             </div>
@@ -246,10 +254,10 @@ const Products = () => {
 
 
           <div className="product">
-            <img src={img9} alt="" />
+            <img src={hat} alt="" />
             <div className="padding">
               <div className="flex flex-btw flex-center">
-                <h3>Burgundy boots</h3>
+                <h3>Bucket Cap</h3>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -259,73 +267,7 @@ const Products = () => {
                 <IoStarSharp fill="#9B9B9B" size={10} />
               </div>
               <div className="flex flex-center flex-btw">
-                <h5>N9000</h5>
-                <button className="bg-black">Order</button>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div className="product">
-            <img src={img9} alt="" />
-            <div className="padding">
-              <div className="flex flex-btw flex-center">
-                <h3>Burgundy boots</h3>
-              </div>
-              <div className="rating mt-5">
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-              </div>
-              <div className="flex flex-center flex-btw">
-                <h5>N9000</h5>
-                <button className="bg-black">Order</button>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div className="product">
-            <img src={img9} alt="" />
-            <div className="padding">
-              <div className="flex flex-btw flex-center">
-                <h3>Burgundy boots</h3>
-              </div>
-              <div className="rating mt-5">
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-              </div>
-              <div className="flex flex-center flex-btw">
-                <h5>N9000</h5>
-                <button className="bg-black">Order</button>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div className="product">
-            <img src={img9} alt="" />
-            <div className="padding">
-              <div className="flex flex-btw flex-center">
-                <h3>Burgundy boots</h3>
-              </div>
-              <div className="rating mt-5">
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-                <IoStarSharp fill="#9B9B9B" size={10} />
-              </div>
-              <div className="flex flex-center flex-btw">
-                <h5>N9000</h5>
+                <h5>N800</h5>
                 <button className="bg-black">Order</button>
               </div>
             </div>

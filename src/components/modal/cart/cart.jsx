@@ -64,7 +64,7 @@ const CartModal = () => {
                     <p>Subtotal of items in cart = N12,000</p>
                     <div className="my-btns flex flex-center gap">
                         <Link to="/mini-store/">
-                            <button id="cnt-btn" onClick={handleClose}>Continue shopping</button>
+                            <button id="cnt-btn" className="white-btn" onClick={handleClose}>Continue shopping</button>
                         </Link>
                         <Link to="/mini-store/checkout/">
                             <button className="btn checkout-btn" onClick={handleClose}>Checkout</button>

@@ -110,7 +110,7 @@ export const Checkout = () => {
                                 <span>Send copy of payment to my email</span>
                             </div>
                         </div>
-                        <button onClick={handlePayment}>pay</button>
+                        <button onClick={handlePayment} className="white-btn">pay</button>
                     </div>
                     
                 </div>

@@ -23,9 +23,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Classic Nike Sneakers</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -46,9 +43,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Classic Nike Sneakers</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -69,9 +63,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Brown face cap</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -94,9 +85,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Brown Zip up Hoodie</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -117,9 +105,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Beige loose trouser for women</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -140,9 +125,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>White hoodie</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -164,9 +146,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Classic rubber crocs</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -187,9 +166,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Floral design low  cover shoe</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -210,9 +186,6 @@ const Products = () => {
             <div className="padding">
               <div className="flex flex-btw flex-center">
                 <h3>Burgundy boots</h3>
-                <div className="icon-container">
-                    <BiSolidCart/>
-                </div>
               </div>
               <div className="rating mt-5">
                 <IoStarSharp fill="#9B9B9B" size={10} />
@@ -227,6 +200,136 @@ const Products = () => {
               </div>
             </div>
           </div>
+
+          <div className="product">
+            <img src={img9} alt="" />
+            <div className="padding">
+              <div className="flex flex-btw flex-center">
+                <h3>Burgundy boots</h3>
+              </div>
+              <div className="rating mt-5">
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+              </div>
+              <div className="flex flex-center flex-btw">
+                <h5>N9000</h5>
+                <button className="bg-black">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className="product">
+            <img src={img9} alt="" />
+            <div className="padding">
+              <div className="flex flex-btw flex-center">
+                <h3>Burgundy boots</h3>
+              </div>
+              <div className="rating mt-5">
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+              </div>
+              <div className="flex flex-center flex-btw">
+                <h5>N9000</h5>
+                <button className="bg-black">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className="product">
+            <img src={img9} alt="" />
+            <div className="padding">
+              <div className="flex flex-btw flex-center">
+                <h3>Burgundy boots</h3>
+              </div>
+              <div className="rating mt-5">
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+              </div>
+              <div className="flex flex-center flex-btw">
+                <h5>N9000</h5>
+                <button className="bg-black">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className="product">
+            <img src={img9} alt="" />
+            <div className="padding">
+              <div className="flex flex-btw flex-center">
+                <h3>Burgundy boots</h3>
+              </div>
+              <div className="rating mt-5">
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+              </div>
+              <div className="flex flex-center flex-btw">
+                <h5>N9000</h5>
+                <button className="bg-black">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className="product">
+            <img src={img9} alt="" />
+            <div className="padding">
+              <div className="flex flex-btw flex-center">
+                <h3>Burgundy boots</h3>
+              </div>
+              <div className="rating mt-5">
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+              </div>
+              <div className="flex flex-center flex-btw">
+                <h5>N9000</h5>
+                <button className="bg-black">Order</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className="product">
+            <img src={img9} alt="" />
+            <div className="padding">
+              <div className="flex flex-btw flex-center">
+                <h3>Burgundy boots</h3>
+              </div>
+              <div className="rating mt-5">
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+                <IoStarSharp fill="#9B9B9B" size={10} />
+              </div>
+              <div className="flex flex-center flex-btw">
+                <h5>N9000</h5>
+                <button className="bg-black">Order</button>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
     </div>

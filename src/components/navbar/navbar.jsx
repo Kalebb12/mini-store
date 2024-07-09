@@ -18,7 +18,7 @@ const Navbar = () => {
                     
                     <ul className=" navs gap flex flex-center desktop">
                         <li><button className="btn bg-white cart desktop" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button></li>
-                        <li><a href="#explore" className="btn bg-black desktop">Explore</a></li>
+                        <li><a href="#explore" className="btn bg-black dark-btn desktop">Explore</a></li>
                     </ul>
                     <Link to="/mini-store/checkout/" className="mobile">
                         <PiShoppingCart size={30} fill="#003CD6" className="mobile"/>

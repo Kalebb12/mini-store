@@ -22,7 +22,7 @@ const SuccessModal = () => {
                         </p>
                     </div>
                     <Link to="/mini-store/">
-                        <button onClick={endPayment}>Home</button>
+                        <button onClick={endPayment} className="dark-btn">Home</button>
                     </Link>
                 </div>
             </div>}

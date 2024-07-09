@@ -131,6 +131,14 @@ font-weight: 600;
 line-height: 18px;
 letter-spacing: -0.05em;
 }
+.white-btn{
+    transition: all 0.1s ease-in;
+}
+.white-btn:hover{
+    cursor: pointer;
+    background-color: rgb(239, 234, 234);
+}
+
 @media (max-width:869px) {
     .checkout{
         min-width: 300px;

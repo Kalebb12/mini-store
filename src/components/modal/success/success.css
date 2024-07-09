@@ -2,7 +2,7 @@
     width: 465px;
     height: 372px;
     position: fixed;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%, -50%);
     left:50%;
     right: 50%;
@@ -22,6 +22,13 @@
     letter-spacing: -0.05em;
 }
 
+.dark-btn:hover{
+    background-color: #454444;
+    cursor: pointer;
+}
+.dark-btn:active{
+    scale: 0.97;
+}
 .modalPayment p{
     font-size: 12px;
     font-weight: 300;
@@ -39,5 +46,6 @@
 @media (max-width:869px) {
     .modalPayment{
         width: 300px;
+        top: 50%;
     }
 }

@@ -30,6 +30,15 @@
     border: none;
 
 }
+
+.product button:hover{
+    background-color: #454242;
+    cursor: pointer;
+}
+
+.product button:active{
+    scale: 0.97;
+}
 .icon-container{
     display: flex;
     justify-content: center;
@@ -64,7 +73,7 @@
 @media (max-width:910px) {
     .product{
         width: 250px;
-        height: ;
+        height:450px;
     }
     .product-cnt{
         max-width: 560px;

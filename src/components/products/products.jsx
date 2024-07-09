@@ -58,7 +58,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N2500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N2500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N5000</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N2500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N4500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N2500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N3000</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N9000</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -224,7 +224,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N2500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N1500</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@ const Products = () => {
               </div>
               <div className="flex flex-center flex-btw">
                 <h5>N800</h5>
-                <button className="bg-black">Order</button>
+                <button className="bg-black" onClick={handleOrder}>Order</button>
               </div>
             </div>
           </div> 

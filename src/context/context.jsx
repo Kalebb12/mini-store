@@ -25,6 +25,7 @@ const GlobalState = ({children}) => {
         document.body.classList.remove("modal-open")
         setPayment(false)
         setPaymentModal(false)
+        setOrder(0)
     }
 
     const [order, setOrder] = useState(0)

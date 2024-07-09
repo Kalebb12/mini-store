@@ -17,12 +17,11 @@ const Navbar = () => {
                     </Link>
                     
                     <ul className=" navs gap flex flex-center desktop">
-                        <li className="relative"><button className="btn bg-white cartdesktop" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button> <div className="order">{order}</div></li>
+                        <li className=""><button className="btn bg-white cart" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/></button></li>
                         <li><a href="#explore" className="btn bg-black dark-btn desktop">Explore</a></li>
                     </ul>
                     <Link to="/mini-store/checkout/" className="mobile">
-                        <PiShoppingCart size={30} fill="#003CD6" className="mobile relative"/>
-                        <div className="order">{order}</div>
+                        <PiShoppingCart size={30} fill="#003CD6" className="mobile"/>
                     </Link>
                 </div>
             </div>

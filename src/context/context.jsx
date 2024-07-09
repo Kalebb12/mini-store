@@ -30,7 +30,6 @@ const GlobalState = ({children}) => {
 
     const [order, setOrder] = useState(0)
     const handleOrder = ()=>{
-        setOrder(order+1)
         alert("order placed")
     }
     return (

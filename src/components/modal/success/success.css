@@ -2,7 +2,7 @@
     width: 465px;
     height: 372px;
     position: fixed;
-    top: 30%;
+    top: 50%;
     transform: translate(-50%, -50%);
     left:50%;
     right: 50%;
@@ -46,6 +46,6 @@
 @media (max-width:869px) {
     .modalPayment{
         width: 300px;
-        top: 50%;
+        top: 40% !important;
     }
 }

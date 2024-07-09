@@ -86,9 +86,9 @@
 @media (max-width:968px) {
     .container-sm{
         flex-shrink: 2;
-        max-width:700px;
+        max-width:680px;
         overflow: hidden;
-        gap: 20px;
+        gap: 20px !important;
     }
     .product-title{
         margin-left: 0;

@@ -86,7 +86,6 @@ body{
   background-color: var(--white);
 }
 .btn:hover{
-  filter:sepia(2);
   cursor: pointer;
 }
 .btn:active{

@@ -11,7 +11,7 @@ export const Checkout = () => {
     const {handlePayment,paymentModal,setPaymentModal} = useContext(GlobalContext)
   return (
     <div>
-        <div className="container padding">
+        <div className="container center padding">
             <div className="checkout-container flex flex-btw gap ">
                 <ul className="checkout">
                     <div className="flex flex-center checkout-arrow">

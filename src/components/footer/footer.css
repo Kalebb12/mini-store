@@ -1,5 +1,10 @@
 footer{
     background-color:#333333 ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
 }
 .footer-container  *{
     color: var(--white) !important;

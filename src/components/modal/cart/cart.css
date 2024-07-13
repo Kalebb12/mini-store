@@ -112,3 +112,14 @@
     }
     
 }
+
+.btm{
+    margin-top: auto;
+    height: 100%;
+    justify-content: flex-end !important;
+    padding: 20px;
+}
+
+#sidenav{
+    overflow-y: scroll !important;
+}

@@ -8,6 +8,7 @@
 .product>img{
     width: 100%;
     object-fit: cover;
+    height: 350px;
 }
 .product-title{
     margin-left: 20px;
@@ -64,11 +65,19 @@
     overflow: hidden;
     gap: 20px;
 }
-
+.alert{
+    padding: 5px 10px;
+}
+.my-product{
+    margin-bottom: 100px !important;
+}
 @media (max-width:425px) {
     .product{
         width: 150px;
         height: 440px !important;
+    }
+    .product-cnt{
+        min-width: 320px;
     }
 }
 
@@ -81,6 +90,10 @@
     .product-cnt{
         max-width: 560px;
         margin: 0 auto;
+        
+    }
+    .product > img{
+        height: 300px;
     }
 }
 @media (max-width:968px) {

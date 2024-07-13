@@ -43,6 +43,9 @@
     margin-bottom: 3px;
 }
 
+.list-item{
+    height: auto !important;
+}
 .payment{
     min-width: 340px;
     height: 630px;
@@ -164,13 +167,11 @@ letter-spacing: -0.05em;
         display: inline-block;
     }
     .bottom{
-       position: absolute;
-       bottom: 20px;
-       margin:0 auto;
-       text-align: center;
-       align-items: center;
-       width: 90%;
-       box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end !important;
+        height: 100px;
     }
 
 

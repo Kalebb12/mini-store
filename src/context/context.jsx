@@ -100,6 +100,7 @@ const GlobalState = ({ children }) => {
       })
       .catch((error) => {
         setErr(error.message);
+        setLoading(false)
       });
   }, [page]);
   return (

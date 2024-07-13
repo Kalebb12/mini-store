@@ -13,7 +13,7 @@ const Products = () => {
         </h2>
 
         <div className="flex flex-col-3 product-cnt">
-          {loading && <p style={{marginLeft:20}}>loading...</p>}
+          {loading && <span class="loader" style={{marginLeft:20}}></span>}
           {err && <p style={{marginLeft:20}}>Error: {err}</p>}
           {
             data.map((product) => {

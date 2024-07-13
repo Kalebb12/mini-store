@@ -2,8 +2,14 @@ import React from 'react'
 import { useContext } from "react";
 import { GlobalContext } from "../context/context";
 const Pagination = () => {
-    const { setPage ,page} = useContext(GlobalContext);
+    const { setPage ,page ,setLoading ,setData} = useContext(GlobalContext);
     const noOfPage = 3
+    const handlePageSwitch = (i)=>{
+        setData([])
+        setLoading(true)
+        setPage(i)
+            
+    }
   return (
     <div>
         {/* pagination using buttons*/}
@@ -12,7 +18,7 @@ const Pagination = () => {
             [...Array(noOfPage)].map((_,i) => {
                 i++
                 return (
-                  <button key={i} onClick={() => setPage(i)} className={`page-btn ${page === i? 'active' : ''}`}>{i}</button>
+                  <button key={i} onClick={() =>{handlePageSwitch(i)}} className={`page-btn ${page === i? 'active' : ''}`}>{i}</button>
                 )
             })
           }

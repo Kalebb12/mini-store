@@ -96,6 +96,7 @@ const GlobalState = ({ children }) => {
       })
       .then((data) => {
         setData(data.items);
+        setErr(null)
       })
       .catch((error) => {
         setErr(error.message);
@@ -116,6 +117,7 @@ const GlobalState = ({ children }) => {
         order,
         handleOrder,
         data,
+        setData,
         cart,
         total,
         setTotal,
@@ -126,6 +128,7 @@ const GlobalState = ({ children }) => {
         remove,
         clearitem,
         loading,
+        setLoading,
         err,
         setPage,
         page

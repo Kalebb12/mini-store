@@ -76,7 +76,7 @@ const GlobalState = ({ children }) => {
   }
   useEffect(() => {
     fetch(
-      `/api/products?organization_id=ba2090f7bd0748e1a702147aef6fa1b7&Appid=288W9VW1YEE3HT6&Apikey=${import.meta.env.VITE_API_KEY}`
+      `https://api.timbu.cloud/products?organization_id=ba2090f7bd0748e1a702147aef6fa1b7&Appid=288W9VW1YEE3HT6&Apikey=${import.meta.env.VITE_API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {

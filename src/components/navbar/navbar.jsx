@@ -9,7 +9,7 @@ const Navbar = () => {
     const {handleOpen,cart} = useContext(GlobalContext)
   return (
     <div>
-        <header className="" id="top">
+        <header  id="top">
             <div className="container center padding">
                 <div className="flex flex-center flex-btw ">
                     <Link to="/mini-store/">

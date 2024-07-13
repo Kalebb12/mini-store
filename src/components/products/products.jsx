@@ -2,8 +2,9 @@ import "./products.css";
 import { IoStarSharp } from "react-icons/io5";
 import { useContext } from "react";
 import { GlobalContext } from "../../context/context";
+import { Link } from "react-router-dom";
 const Products = () => {
-  const { handleOrder, data ,cart} = useContext(GlobalContext);
+  const { handleOrder, data ,cart ,loading , err} = useContext(GlobalContext);
   return (
     <div>
       <div className="container-sm center padding my-product">
@@ -12,14 +13,16 @@ const Products = () => {
         </h2>
 
         <div className="flex flex-col-3 product-cnt">
-          {data.length > 0 ? (
+          {loading && <p style={{marginLeft:20}}>loading...</p>}
+          {err && <p style={{marginLeft:20}}>Error: {err}</p>}
+          {
             data.map((product) => {
               return (
                 <div className="product" key={product.id}>
                   <img src={"https://api.timbu.cloud/images/"+product.photos[0].url} alt={product.name} />
                   <div className="padding">
                     <div className="flex flex-btw flex-center">
-                      <h3>{product.name}</h3>
+                      <h3><Link to={`/mini-store/product/${product.id}`}>{product.name}</Link></h3>
                     </div>
                     <div className="rating mt-5">
                       <IoStarSharp fill="#9B9B9B" size={10} />
@@ -45,9 +48,7 @@ const Products = () => {
                 </div>
               );
             })
-          ) : (
-            <div>Loading....</div>
-          )}
+          }
         </div>
       </div>
     </div>

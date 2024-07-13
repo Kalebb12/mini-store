@@ -1,0 +1,37 @@
+.details > img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.details  h2{
+    font-weight:600;
+}
+@media (max-width:776px) {
+    .details > img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width:580px) {
+    .details{
+        flex-direction: column;
+    }
+    .details > img{
+       width:280px;
+    }
+    .details  h2{
+        font-weight:450;
+    }
+}
+
+.details > p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.d-btn{
+    border: none;
+    width: 200px;
+    padding: 5px;
+    border-radius: 4px;
+}

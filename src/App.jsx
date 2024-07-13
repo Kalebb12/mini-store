@@ -11,7 +11,7 @@ function App() {
       <Navbar/>
       <CartModal/>
       <Routes>
-        <Route path="/mini-store/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/mini-store/checkout/" element={<Checkout/>} />
         <Route path="/mini-store/product/:id" element={<Details/>}/>
       </Routes>

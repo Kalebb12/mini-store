@@ -8,5 +8,15 @@
             "source" :"/(.*)",
             "destination":"/index.html"
         }
+    ],
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static-build",
+        "config": {
+          "framework": "vite"
+        }
+      }
     ]
 }

@@ -10,6 +10,7 @@ const GlobalState = ({ children }) => {
   const [increment, setIncrement] = useState([]);
   const [loading ,setLoading] = useState(true)
   const [err, setErr] = useState(null)
+  const [page,setPage] = useState(1)
   const handleOpen = () => {
     setShow(true);
     document.body.classList.add("modal-open");
@@ -79,7 +80,7 @@ const GlobalState = ({ children }) => {
   };
   useEffect(() => {
     fetch(
-      `/api/products?organization_id=ba2090f7bd0748e1a702147aef6fa1b7&Appid=288W9VW1YEE3HT6&Apikey=${
+      `/api/products?organization_id=ba2090f7bd0748e1a702147aef6fa1b7&page=${page}&size=9&Appid=288W9VW1YEE3HT6&Apikey=${
         import.meta.env.VITE_API_KEY
       }`
     )
@@ -99,7 +100,7 @@ const GlobalState = ({ children }) => {
       .catch((error) => {
         setErr(error.message);
       });
-  }, []);
+  }, [page]);
   return (
     <GlobalContext.Provider
       value={{
@@ -125,7 +126,9 @@ const GlobalState = ({ children }) => {
         remove,
         clearitem,
         loading,
-        err
+        err,
+        setPage,
+        page
       }}
     >
       {children}

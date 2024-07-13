@@ -22,7 +22,7 @@ const Products = () => {
                   <img src={"https://api.timbu.cloud/images/"+product.photos[0].url} alt={product.name} />
                   <div className="padding">
                     <div className="flex flex-btw flex-center">
-                      <h3><Link to={`/mini-store/product/${product.id}`}>{product.name}</Link></h3>
+                      <h3><Link to={`/product/${product.id}`}>{product.name}</Link></h3>
                     </div>
                     <div className="rating mt-5">
                       <IoStarSharp fill="#9B9B9B" size={10} />

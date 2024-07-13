@@ -9,7 +9,7 @@ const SuccessModal = () => {
         <div>
             {payment  && 
             <div>
-                <Link to="/mini-store/">
+                <Link to="/">
                 <div className="overlay" onClick={endPayment}></div>
                 </Link>
                 <div className="modalPayment text-center">
@@ -21,7 +21,7 @@ const SuccessModal = () => {
                             Congratulations! <br /> Your purchase was successful
                         </p>
                     </div>
-                    <Link to="/mini-store/">
+                    <Link to="/">
                         <button onClick={endPayment} className="dark-btn">Home</button>
                     </Link>
                 </div>

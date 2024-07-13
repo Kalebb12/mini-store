@@ -12,7 +12,7 @@ const Navbar = () => {
         <header  id="top">
             <div className="container center padding">
                 <div className="flex flex-center flex-btw ">
-                    <Link to="/mini-store/">
+                    <Link to="/">
                         <h2 className="no-wrap nav-title">No.1 Thrift</h2>
                     </Link>
                     
@@ -20,7 +20,7 @@ const Navbar = () => {
                         <li className=""><button className="btn bg-white cart relative" onClick={handleOpen}><PiShoppingCart size={20} fill="#003CD6"/><div className="order">{cart.length}</div></button></li>
                         <li><a href="#explore" className="btn bg-black dark-btn desktop">Explore</a></li>
                     </ul>
-                    <Link to="/mini-store/checkout/" className="mobile relative">
+                    <Link to="/checkout/" className="mobile relative">
                         <PiShoppingCart size={30} fill="#003CD6" className="mobile"/>
                         <div className="order">{cart.length}</div>
                     </Link>

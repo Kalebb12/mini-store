@@ -14,7 +14,7 @@ export const Checkout = () => {
         <div className="checkout-container flex flex-btw gap ">
           <ul className="checkout">
             <div className="flex flex-center checkout-arrow">
-              <Link to="/mini-store/">
+              <Link to="/">
                 <BiArrowBack size={28} />
               </Link>
               <h3>Checkout</h3>
@@ -166,10 +166,10 @@ export const Checkout = () => {
       <div className="flex flex-col gap flex-center center bottom">
         <p>Subtotal of items in cart = N{total}</p>
         <div className="my-btns flex flex-center gap">
-          <Link to="/mini-store/">
+          <Link to="/">
             <button className="btn back-btn">Continue shopping</button>
           </Link>
-          <Link to="/mini-store/checkout/">
+          <Link to="/checkout/">
             <button
               className="btn checkout-btn"
               onClick={() => {

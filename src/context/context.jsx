@@ -37,7 +37,7 @@ const GlobalState = ({ children }) => {
   const add = (item , num ) => {
     if (num < item.available_quantity) {
       setIncrement([...increment, item]);
-      setTotal(total + item.current_price[0].NGN[0] * num);
+      setTotal(total + item.current_price[0].NGN[0]);
     }
   };
 

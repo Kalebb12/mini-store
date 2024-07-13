@@ -2,11 +2,11 @@
     "rewrites":[
         {
             "source" :"/api/(.*)",
-            "detsination":"https://api.timbu.cloud/$1"
+            "destination":"https://api.timbu.cloud/$1"
         },
         {
             "source" :"/(.*)",
-            "detsination":"/index.html"
+            "destination":"/index.html"
         }
     ]
 }

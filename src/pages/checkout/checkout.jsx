@@ -39,8 +39,8 @@ export const Checkout = () => {
                         {item.current_price[0].NGN[0] * num}
                       </p>
                     </div>
-                    <div className="flex flex-btw">
-                    <div className="flex gap">
+                    <div className="flex flex-btw mt">
+                    <div className="flex gap ">
                       <button
                         className="alert bg-black"
                         onClick={() => {
